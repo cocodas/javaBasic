@@ -1,4 +1,4 @@
-package standard_of_java.execise.ch6_6;
+package standard_of_java.execise.ch6.ques6;
 
 public class Point {
 	public static double getDistance(int x, int y, int x1, int y1) {

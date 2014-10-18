@@ -1,4 +1,4 @@
-package basic.ch09;
+ package basic.ch09;
 
 public class WhyStatic {
 	private static int idNumber;

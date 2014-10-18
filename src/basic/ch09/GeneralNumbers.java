@@ -17,6 +17,7 @@ public class GeneralNumbers {
 	
 	@Override
 	public String toString() {
+		// number 변수 출력
 		return String.valueOf(number);
 	}
 }
