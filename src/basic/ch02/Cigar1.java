@@ -4,6 +4,8 @@ public class Cigar1 implements CigaMaker{
 	private int tex;
 	private int pricePerProduct;
 	
+	
+	
 	@Override
 	public void cigaProduct() {
 		pricePerProduct = CIGAPRICE + 200;

@@ -5,6 +5,7 @@ public class Student {
 	private int hiSchoolYear;
 	private int hiSchoolClass;
 	private double[] score;
+	int ban, no, kor, eng, math;
 	
 	public Student() {
 		// empty;
@@ -17,7 +18,17 @@ public class Student {
 		score = new double[]{kor, math, eng, total, avg};
 	}
 	
-	public String info() {
+
+	public Student(String name, int ban, int no, int kor, int eng, int math) {
+		this.name = name;
+		this.ban = ban;
+		this.no = no;
+		this.kor = kor;
+		this.eng = eng;
+		this.math = math;		
+	}
+	
+	public String infos() {
 		return toString();
 	}
 	
@@ -37,5 +48,22 @@ public class Student {
 			count++;
 		}
 		return sb.toString();
+	}
+
+	
+	
+	
+	public int getTotal() {
+		int total = kor+eng+math;
+		return total;
+	}
+	
+	public float getAverage() {
+		float everage = (int)(getTotal()/3f * 10 + 0.5f) / 10f;
+		return everage;		
+	}
+	
+	public String info() {
+		return name + ", " + ban + ", " + no + ", " + kor + ", " + eng + ", " + math + ", " + getTotal() + ", " + getAverage();
 	}
 }
