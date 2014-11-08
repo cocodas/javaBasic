@@ -1,6 +1,6 @@
 package standard_of_java.exercise.ch7.ques19;
 
-public class Computer extends Product {
+public class Computer extends Product{
 	public Computer() {
 		super(200);
 	}
@@ -9,4 +9,5 @@ public class Computer extends Product {
 	public String toString() {
 		return "Computer";
 	}
+
 }
