@@ -1,17 +1,13 @@
-package nio7.chapter01;
+package nio2.chapter01;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 
-public class FileTest02Main {
+public class FileTest01Main {
 
 	public static void main(String[] args) {
 		// FileTest project 폴더에서 filefolder est.txt 파일을 객체로 생성한다.
 		// 는 이스케이프 문자로 인식되므로 \\ -> \ 로 사용한다.
-		Path path = Paths.get("d:\\","test.txt");
-		System.out.println("path class의 사용: " + path);
 		File file = new File("d:\\test.txt");
 
 		// 경로에 파일이 존재하면
@@ -57,5 +53,4 @@ public class FileTest02Main {
 			System.out.println("파일을 찾을 수 없습니다. ");
 		}
 	}
-
 }

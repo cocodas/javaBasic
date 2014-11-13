@@ -1,4 +1,4 @@
-package nio7.chapter01;
+package nio2.chapter01;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
