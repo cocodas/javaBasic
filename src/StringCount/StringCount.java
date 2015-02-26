@@ -8,19 +8,19 @@ public class StringCount {
 		this.source = source;
 	}
 	
-	public int stringCount(String s) {
-		return stringCount(s,0);
+	public int stringCount(String sourceString) {
+		return stringCount(sourceString, 0);
 		
 	}
 
-	private int stringCount(String s, int pos) {
+	private int stringCount(String sourceString, int stringPosition) {
 		int index = 0;
-		if (s == null || s.length() == 0) {
+		if (sourceString == null || sourceString.length() == 0) {
 			return 0;
 		}
-		if ((index = source.indexOf(s, pos)) != -1) {
+		if ((index = source.indexOf(sourceString, stringPosition)) != -1) {
 			count++;
-			stringCount(s, index + s.length());
+			stringCount(sourceString, index + sourceString.length());
 		}
 		return count;
 	}
