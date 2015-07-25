@@ -10,5 +10,10 @@ public class ArrayListLinkedListAdd2 {
 	        long end = System.currentTimeMillis(); 
 	        return end - start; 
 	}
+	Object object;
+	void printClassName(Object obj) {
+        System.out.println("The class of " + obj +
+                           " is " + obj.getClass().getName());
+    }
 
 }

@@ -35,6 +35,7 @@ public class ArrayListLinkedListMain {
         System.out.println("= 순차적으로 삭제하기 ="); 
         System.out.println("ArrayList :"+linkedListRemove1.remove1(al)); 
         System.out.println("LinkedList :"+linkedListRemove1.remove1(ll)); 
+        
 	} 
 
 }
