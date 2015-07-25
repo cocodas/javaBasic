@@ -12,17 +12,12 @@ public class Count {
 			if (pos != -1) {
 				count++;
 				pos += target.length();
+
 			}else{
 				break;
 			}
 		}
 		return count;
 	}
-	
-	
-
-		
-	
-	
 
 }

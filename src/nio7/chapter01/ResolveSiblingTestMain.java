@@ -10,7 +10,6 @@ public class ResolveSiblingTestMain {
 		System.out.println("결과: " + base.toString());
 		Path path = base.resolveSibling("paging.jsp");
 		System.out.println("결과: " + path.toString());
-		
 	}
 
 }
