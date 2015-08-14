@@ -23,6 +23,9 @@ public class RoleListMain {
 	        roleList.add(1, new Role("rolename2", roleList2));
 	 
 	        List<Role> list = roleList.asList();
+	        //list.add(new ObjectName("domain5", "key5", "value5")); --> 에러 발생
+	        //new ArrayList<String>(); new LinkedList<String>();대신 asList();로 List를 생성 하게되면 원소를 새로 추가하거나 삭제 할수 없다.
+
 	        int index = 0;
 	        while (index < list.size())
 	        {

@@ -27,6 +27,7 @@ public class RoleUnresolvedListMain {
         while (index < list.size())
         {
             System.out.println(list.get(index++) + "\t");
+            System.out.println();
         }
         System.out.println();
 	}

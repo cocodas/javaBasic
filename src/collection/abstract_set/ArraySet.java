@@ -1,4 +1,4 @@
-package collection.abstractset;
+package collection.abstract_set;
 
 import java.io.Serializable;
 import java.util.AbstractSet;
