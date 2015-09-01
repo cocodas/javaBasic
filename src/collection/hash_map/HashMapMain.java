@@ -16,12 +16,14 @@ public class HashMapMain {
         hashMap.put(1, 100);
         hashMap.put(2, 200);
         hashMap.put(3, 300);
+        
  
         Map<Integer, Integer> anotherMap = new HashMap<Integer, Integer>();
         anotherMap.put(4, 400);
         anotherMap.put(5, 500);
  
         hashMap.putAll(anotherMap);
+        
  
         System.out.println("the key set of the map is ");
         Set<Integer> keySet = hashMap.keySet();

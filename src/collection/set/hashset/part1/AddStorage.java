@@ -8,7 +8,7 @@ public class AddStorage<T> implements OperateStorage<T> {
 	}
 
 	@Override
-	public void execute(T t) {
+	public void execute (T t) {
 		hashSetStorage.getHashSetStudent().add(t);
 	}
 

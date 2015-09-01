@@ -131,7 +131,7 @@ public class Student {
 		sb.append("name: " + name + "\t");
 		sb.append("subject: " + subject + "\t");
 		sb.append("grade: " + grade + "\t");
-		sb.append("age: " + age + "\t");
+		sb.append("age: " + age + "\t\t");
 		sb.append("gender: " + gender + "\r\n");
 		return sb.toString();
 	}
