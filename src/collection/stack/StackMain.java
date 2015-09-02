@@ -9,7 +9,7 @@ public class StackMain {
 	public static void main(String[] args) {
 		
 		StackImpl<Integer> stack = new StackImpl<Integer>();
-        System.out.println("element pushed : " + stack.push(3));
+        System.out.println("element pushed : " + stack.push(3)); 
         System.out.println("element pushed : " + stack.push(4));
         System.out.println("element pushed : " + stack.push(-19));
         System.out.println("element pushed : " + stack.push(349));

@@ -49,6 +49,7 @@ public class OrderImformation {
 		
 		removeFruit.display();
 		System.out.println("--------------------------------------------------------------------------------------------------------------");
+		//System.out.println("과일 사이즈 : " + removeFruit.fruitSize());
 	}
 	
 	public void vegetableCancle() {
@@ -68,16 +69,7 @@ public class OrderImformation {
 		
 		removeSnack.display();
 		System.out.println("--------------------------------------------------------------------------------------------------------------");
+		
 	}
 	
-	
-	
-	
-	
-	
-	
-
-	
-	
-
 }

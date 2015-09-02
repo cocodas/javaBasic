@@ -52,6 +52,10 @@ public class RemoveStorage<K, V> implements OperateStorage<K, V>{
 	public V snackRemove(K k) {
 		return hashMapStorage.hashMapSnack.remove(k);
 	}
+	
+//	public int fruitSize() {
+//		return hashMapStorage.hashMapFruit.size();
+//	}
 
 
 
