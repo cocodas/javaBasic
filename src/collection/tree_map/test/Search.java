@@ -1,33 +1,25 @@
 package collection.tree_map.test;
 
-public class MathStorage<K, V> implements OperateStorage<K, V> {
+public class Search<K, V> {
 	private TreeMapStorage<K, V> treeMapStorage;
 	
-	public MathStorage() {
+	public Search() {
 		treeMapStorage = new TreeMapStorage<>();
 	}
-
+	
 	public TreeMapStorage<K, V> getTreeMapStorage() {
 		return treeMapStorage;
 	}
+
+
 
 	public void setTreeMapStorage(TreeMapStorage<K, V> treeMapStorage) {
 		this.treeMapStorage = treeMapStorage;
 	}
 
-	@Override
-	public void display() {
-		treeMapStorage.display();
-	}
 
-	@Override
-	public void execute(K k, V v) {
-		treeMapStorage.getMathTreeMap().put(k, v);
+
+	public void searchStudent(K k) {
+		System.out.println(treeMapStorage.getStudentTreeMap().get(k));
 	}
-	
-	
-	
-	
-	
-	
 }

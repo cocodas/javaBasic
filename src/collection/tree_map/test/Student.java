@@ -4,16 +4,16 @@ public class Student {
 	
 	//Manager manager = new Manager();
 	
-	public int studentNumber;
-	public String name;
-	public int grade;
-	public int mathScore;
-	public int englishScore;
-	public int scienceScore;
-	public int koreanScore;
+	private int studentNumber;
+	private String name;
+	private int grade;
+	private int mathScore;
+	private int englishScore;
+	private int scienceScore;
+	private int koreanScore;
 	//public int sum = manager.mathScan+manager.englishScan+manager.scienceScan+manager.koreanScan;
 	//public float everage = sum/4;
-	
+		
 	public Student(StudentBuilder studentBuilder) {
 		studentNumber = studentBuilder.studentNumber;
 		name = studentBuilder.name;
@@ -25,13 +25,13 @@ public class Student {
 	}
 	
 	public static class StudentBuilder{
-		public int studentNumber;
-		public String name;
-		public int grade;
-		public int mathScore;
-		public int englishScore;
-		public int scienceScore;
-		public int koreanScore;
+		private int studentNumber;
+		private String name;
+		private int grade;
+		private int mathScore;
+		private int englishScore;
+		private int scienceScore;
+		private int koreanScore;
 		
 		public StudentBuilder studentNumber(int studentNumber) {
 			this.studentNumber = studentNumber;
@@ -140,8 +140,8 @@ public class Student {
 	@Override
 	public String toString() {
 		StringBuffer sb = new StringBuffer();
-		sb.append("학번 : [ " + studentNumber + " ]\t");
 		sb.append("이름 : [ " + name + " ]\t");
+		sb.append("학번 : [ " + studentNumber + " ]\t");
 		sb.append("학년 : [ " + grade + " 학년]\t");
 		sb.append("수학 점수 : [ " + mathScore + "점 ]\t");
 		sb.append("영어 점수 : [ " + englishScore + "점 ]\t");
