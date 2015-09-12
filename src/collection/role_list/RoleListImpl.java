@@ -7,6 +7,7 @@ import javax.management.relation.Role;
 import javax.management.relation.RoleList;
 
 public class RoleListImpl {
+
 	private RoleList roleList;
 
 	public RoleListImpl() {

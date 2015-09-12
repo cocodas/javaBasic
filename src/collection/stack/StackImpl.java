@@ -1,5 +1,6 @@
 package collection.stack;
 
+import java.util.Iterator;
 import java.util.Stack;
 
 public class StackImpl<E> {
@@ -28,6 +29,10 @@ public class StackImpl<E> {
 
 	public int search(Object o) {
 		return stack.search(o);
+	}
+
+	public Iterator<E> iterator() {
+		return stack.iterator();
 	}
 
 }

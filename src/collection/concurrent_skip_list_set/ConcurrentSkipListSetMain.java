@@ -11,7 +11,7 @@ public class ConcurrentSkipListSetMain {
 	public static void main(String[] args) {
 
 		Set<String> concurrentSkipListSet = new ConcurrentSkipListSet<String>();
-		concurrentSkipListSet.add("audi");
+		concurrentSkipListSet.add("Test");
 
 		Iterator<String> iterator = concurrentSkipListSet.iterator();
 		while (iterator.hasNext()) {
@@ -26,8 +26,7 @@ public class ConcurrentSkipListSetMain {
 		System.out.println();
 
 		// fail-safe
-		Enumeration<String> listEnum = Collections
-				.enumeration(concurrentSkipListSet);
+		Enumeration<String> listEnum = Collections.enumeration(concurrentSkipListSet);
 		while (listEnum.hasMoreElements()) {
 			concurrentSkipListSet.add("newElement2");
 			System.out.println(listEnum.nextElement());
@@ -41,5 +40,4 @@ public class ConcurrentSkipListSetMain {
 		}
 
 	}
-
 }
